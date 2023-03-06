@@ -1,0 +1,671 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>This is Roryou HOMEPAGE</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="947f8ecb-88ec-4ce8-8f90-1d549653bfbc" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/gradients_5.png" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🌐</span></div><h1 class="page-title">This is Roryou HOMEPAGE</h1></header><div class="page-body"><nav id="a7a28529-90ea-4077-95bd-c1a8b56d341d" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#18d88c16-347b-4cb5-918e-ab89dea5ab89">个人网站记录</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#b581087e-ca15-4128-936f-183c4d7283e0">分析系统</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#22edd7d6-5b71-47f4-8ca5-f5430d27db1d">风控系统</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#be7d9aa0-b301-4582-844d-f6b26c22f493">推荐系统</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#0bef7301-ea1f-42dc-a3f8-455420518122">自然语言处理</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#03d1663b-1437-4411-a39a-5cb58e5e49c0">计算机视觉</a></div></nav><h1 id="18d88c16-347b-4cb5-918e-ab89dea5ab89" class="">个人网站记录</h1><p id="5286e211-b6f3-4dbc-9e62-9e0f861502ba" class="">从 2023/02/20  开始上线，目前为止约2周</p><div id="11758a96-193f-4976-84b7-a026e78f9024" class="column-list"><div id="ed6295d3-26df-47ac-bcfc-28af92f17336" style="width:50%" class="column"><figure id="dd6e1c0d-75c1-4ea5-a8a8-c56c945d8514" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled.png"><img style="width:1806px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled.png"/></a></figure></div><div id="05b98960-034c-42b1-a222-903f447f730a" style="width:50%" class="column"><figure id="6006d3b0-3e3f-4952-b609-46371945fc6c" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%201.png"><img style="width:1792px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%201.png"/></a></figure></div></div><div id="d957ddc4-4ae2-432f-bbcf-0deaf6a91f87" class="column-list"><div id="98e7e3e3-ef99-4a20-aa12-856f3044e639" style="width:50%" class="column"><figure id="24e30fde-dc2f-42dc-a35a-ef465fffc4ac" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%202.png"><img style="width:1788px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%202.png"/></a></figure></div><div id="35999427-da50-487f-954c-ce6179a09309" style="width:50%" class="column"><figure id="4c9cccf2-f895-4f94-b7fb-5bf690071328" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%203.png"><img style="width:1818px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%203.png"/></a></figure></div></div><h1 id="b581087e-ca15-4128-936f-183c4d7283e0" class="">分析系统</h1><p id="d5effe6a-a6f9-40fa-a82b-7a0201b73049" class="">shap</p><h1 id="22edd7d6-5b71-47f4-8ca5-f5430d27db1d" class="">风控系统</h1><p id="cb10e0d3-1d82-477d-a43c-2c456c6d127f" class="">lupin4</p><h1 id="be7d9aa0-b301-4582-844d-f6b26c22f493" class="">推荐系统</h1><div id="f6c7a585-b794-4d54-8fa8-7d519d3293d5" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>模型</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>方向</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>论文</th></tr></thead><tbody><tr id="5353436c-fb0e-4862-a122-68a182282389"><td class="cell-title"><a href="https://www.notion.so/TextCnn-5353436cfb0e4862a12268a182282389">TextCnn(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-blue">内容理解</span></td><td class="cell-fp|i">[EMNLP 2014]Convolutional neural networks for sentence classication</td></tr><tr id="a1643053-ede3-410d-a9b3-62418bb0b838"><td class="cell-title"><a href="https://www.notion.so/TagSpace-a1643053ede3410da9b362418bb0b838">TagSpace(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-blue">内容理解</span></td><td class="cell-fp|i">[EMNLP 2014]TagSpace: Semantic Embeddings from Hashtags</td></tr><tr id="58115412-af85-4af2-8220-14ba9cce05df"><td class="cell-title"><a href="https://www.notion.so/DSSM-58115412af854af2822014ba9cce05df">DSSM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-orange">匹配</span></td><td class="cell-fp|i">[CIKM 2013]Learning Deep Structured Semantic Models for Web Search using Clickthrough Data</td></tr><tr id="6145b2d3-3127-4a30-b56e-8d8e051b3b91"><td class="cell-title"><a href="https://www.notion.so/Match-Pyramid-6145b2d331274a30b56e8d8e051b3b91">Match-Pyramid(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-orange">匹配</span></td><td class="cell-fp|i">[AAAI 2016]Text Matching as Image Recognition</td></tr><tr id="6eb9698e-fbe7-413a-bd2c-586c12b3e814"><td class="cell-title"><a href="https://www.notion.so/MultiView-Simnet-6eb9698efbe7413abd2c586c12b3e814">MultiView-Simnet(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-orange">匹配</span></td><td class="cell-fp|i">[WWW 2015]A Multi-View Deep Learning Approach for Cross Domain User Modeling in Recommendation Systems</td></tr><tr id="e758f4b5-9b08-4153-a39c-8a3a49392d32"><td class="cell-title"><a href="https://www.notion.so/KIM-e758f4b59b084153a39c8a3a49392d32">KIM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-orange">匹配</span></td><td class="cell-fp|i">[SIGIR 2021]Personalized News Recommendation with Knowledge-aware Interactive Matching</td></tr><tr id="7d6acd9e-667f-444a-8009-0cf798a1a11b"><td class="cell-title"><a href="https://www.notion.so/TDM-7d6acd9e667f444a80090cf798a1a11b">TDM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[KDD 2018]Learning Tree-based Deep Model for Recommender Systems</td></tr><tr id="ce7a1c40-f22c-44b3-8db6-56e599eb2c8c"><td class="cell-title"><a href="https://www.notion.so/FastText-ce7a1c40f22c44b38db656e599eb2c8c">FastText</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[EACL 2017]Bag of Tricks for Efficient Text Classification</td></tr><tr id="72c6caae-145c-4310-b685-5c6b7539ff00"><td class="cell-title"><a href="https://www.notion.so/MIND-72c6caae145c4310b6855c6b7539ff00">MIND(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[2019]Multi-Interest Network with Dynamic Routing for Recommendation at Tmall</td></tr><tr id="21503929-946f-4b47-a7cd-59ef0e5a5263"><td class="cell-title"><a href="https://www.notion.so/Word2Vec-21503929946f4b47a7cd59ef0e5a5263">Word2Vec(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[NIPS 2013]Distributed Representations of Words and Phrases and their Compositionality</td></tr><tr id="b8a0c6af-e3b2-4a25-9df2-b9197b704090"><td class="cell-title"><a href="https://www.notion.so/DeepWalk-b8a0c6afe3b24a259df2b9197b704090">DeepWalk(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[SIGKDD 2014]DeepWalk: Online Learning of Social Representations</td></tr><tr id="0c3d13e9-edaf-4c05-98db-ea405f608160"><td class="cell-title"><a href="https://www.notion.so/SSR-0c3d13e9edaf4c0598dbea405f608160">SSR</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[SIGIR 2016]Multtti-Rate Deep Learning for Temporal Recommendation</td></tr><tr id="584a48ca-0443-421c-8cf2-719335812281"><td class="cell-title"><a href="https://www.notion.so/Gru4Rec-584a48ca0443421c8cf2719335812281">Gru4Rec(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[2015]Session-based Recommendations with Recurrent Neural Networks</td></tr><tr id="489aae09-2bee-4ec1-94f0-259ba042e401"><td class="cell-title"><a href="https://www.notion.so/Youtube_dnn-489aae092bee4ec194f0259ba042e401">Youtube_dnn</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[RecSys 2016]Deep Neural Networks for YouTube Recommendations</td></tr><tr id="78da5864-5faf-4f15-a057-f040faa4a12d"><td class="cell-title"><a href="https://www.notion.so/NCF-78da58645faf4f15a057f040faa4a12d">NCF(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[WWW 2017]Neural Collaborative Filtering</td></tr><tr id="7e225488-e44d-4832-85df-4cf82c14e963"><td class="cell-title"><a href="https://www.notion.so/TiSAS-7e225488e44d483285df4cf82c14e963">TiSAS</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[WSDM 2020]Time Interval Aware Self-Attention for Sequential Recommendation</td></tr><tr id="f5f7f56f-eacd-4800-b062-02a8d210c751"><td class="cell-title"><a href="https://www.notion.so/ENSFM-f5f7f56feacd4800b06202a8d210c751">ENSFM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[IW3C2 2020]Eicient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation</td></tr><tr id="244e031f-5e43-4682-aa61-95155b73eb0c"><td class="cell-title"><a href="https://www.notion.so/MHCN-244e031f5e434682aa6195155b73eb0c">MHCN</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[WWW 2021]Self-Supervised Multi-Channel Hypergraph Convolutional Network for Social Recommendation</td></tr><tr id="6003eb2a-1e69-4a03-a324-6bc41dba3ab1"><td class="cell-title"><a href="https://www.notion.so/GNN-6003eb2a1e694a03a3246bc41dba3ab1">GNN</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[AAAI 2019]Session-based Recommendation with Graph Neural Networks</td></tr><tr id="338a73b0-57fe-47fa-9e9f-f7b944811eb4"><td class="cell-title"><a href="https://www.notion.so/RALM-338a73b057fe47fa9e9ff7b944811eb4">RALM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i">[KDD 2019]Real-time Attention Based Look-alike Model for Recommender System</td></tr><tr id="d163dfde-ad10-479d-bdf6-79198a9cc9cd"><td class="cell-title"><a href="https://www.notion.so/Logistic-Regression-d163dfdead10479dbdf679198a9cc9cd">Logistic Regression</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">/</td></tr><tr id="17507d33-de10-44ef-aeb3-685b66e2f67c"><td class="cell-title"><a href="https://www.notion.so/Dnn-17507d33de1044efaeb3685b66e2f67c">Dnn</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">/</td></tr><tr id="dfd9d41f-9469-4101-bdbb-fb56ba6d9513"><td class="cell-title"><a href="https://www.notion.so/FM-dfd9d41f94694101bdbbfb56ba6d9513">FM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[IEEE Data Mining 2010]Factorization machines</td></tr><tr id="0f28f833-7705-4f08-9385-433cb4b702ac"><td class="cell-title"><a href="https://www.notion.so/BERT4REC-0f28f83377054f089385433cb4b702ac">BERT4REC</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[CIKM 2019]BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer</td></tr><tr id="c23aead2-fda8-46e8-bc3d-af34e505c77c"><td class="cell-title"><a href="https://www.notion.so/FAT_DeepFFM-c23aead2fda846e8bc3daf34e505c77c">FAT_DeepFFM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[2019]FAT-DeepFFM: Field Attentive Deep Field-aware Factorization Machine</td></tr><tr id="b6a61fe1-8a6c-4eb0-85e9-1910ac74531c"><td class="cell-title"><a href="https://www.notion.so/FFM-b6a61fe18a6c4eb085e91910ac74531c">FFM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[RECSYS 2016]Field-aware Factorization Machines for CTR Prediction</td></tr><tr id="36090a60-cd48-4f9d-98e6-486c2879bfb2"><td class="cell-title"><a href="https://www.notion.so/FNN-36090a60cd484f9d98e6486c2879bfb2">FNN</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[ECIR 2016]Deep Learning over Multi-field Categorical Data</td></tr><tr id="dc2f607f-f0f4-4aac-8557-8d9c8142bdb1"><td class="cell-title"><a href="https://www.notion.so/Deep-Crossing-dc2f607ff0f44aac85578d9c8142bdb1">Deep Crossing</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[ACM 2016]Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features</td></tr><tr id="7bda3e87-9130-4bac-b871-bde4ffa8f111"><td class="cell-title"><a href="https://www.notion.so/Pnn-7bda3e8791304bacb871bde4ffa8f111">Pnn</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[ICDM 2016]Product-based Neural Networks for User Response Prediction</td></tr><tr id="e4db1b95-b63e-4768-afe6-e63d9975a571"><td class="cell-title"><a href="https://www.notion.so/DCN-e4db1b95b63e4768afe6e63d9975a571">DCN(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[KDD 2017]Deep &amp; Cross Network for Ad Click Predictions</td></tr><tr id="020f8a9f-ebc6-4002-96f6-621dfc7bcb4b"><td class="cell-title"><a href="https://www.notion.so/NFM-020f8a9febc6400296f6621dfc7bcb4b">NFM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[SIGIR 2017]Neural Factorization Machines for Sparse Predictive Analytics</td></tr><tr id="d9eb9206-46a1-4b48-a9a7-10f5fbfbd5b4"><td class="cell-title"><a href="https://www.notion.so/AFM-d9eb920646a14b48a9a710f5fbfbd5b4">AFM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[IJCAI 2017]Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks</td></tr><tr id="fdde778c-f75d-4844-8a6e-c5b3669243a3"><td class="cell-title"><a href="https://www.notion.so/DMR-fdde778cf75d48448a6ec5b3669243a3">DMR(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[AAAI 2020]Deep Match to Rank Model for Personalized Click-Through Rate Prediction</td></tr><tr id="18fbc15a-4c4f-49ab-9dc7-e85351aeaf53"><td class="cell-title"><a href="https://www.notion.so/DeepFM-18fbc15a4c4f49ab9dc7e85351aeaf53">DeepFM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[IJCAI 2017]DeepFM: A Factorization-Machine based Neural Network for CTR Prediction</td></tr><tr id="dbde8272-2f64-4ef7-b8c0-7e59c156e37a"><td class="cell-title"><a href="https://www.notion.so/xDeepFM-dbde82722f644ef7b8c07e59c156e37a">xDeepFM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[KDD 2018]xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems</td></tr><tr id="2bd12db5-fe19-4c79-8c78-b72c28685e57"><td class="cell-title"><a href="https://www.notion.so/DIN-2bd12db5fe194c798c78b72c28685e57">DIN(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[KDD 2018]Deep Interest Network for Click-Through Rate Prediction</td></tr><tr id="06c58f31-ad38-438e-b7bc-be2ffb6adaa2"><td class="cell-title"><a href="https://www.notion.so/DIEN-06c58f31ad38438eb7bcbe2ffb6adaa2">DIEN(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[AAAI 2019]Deep Interest Evolution Network for Click-Through Rate Prediction</td></tr><tr id="12a0bdc0-90da-4a93-9b91-e69518dd8bd4"><td class="cell-title"><a href="https://www.notion.so/GateNet-12a0bdc090da4a939b91e69518dd8bd4">GateNet(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[SIGIR 2020]GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction</td></tr><tr id="95448195-4c37-410e-804e-43f438972314"><td class="cell-title"><a href="https://www.notion.so/DLRM-954481954c37410e804e43f438972314">DLRM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[CoRR 2019]Deep Learning Recommendation Model for Personalization and Recommendation Systems</td></tr><tr id="b63465da-5cd8-4d58-b021-661ff0838104"><td class="cell-title"><a href="https://www.notion.so/NAML-b63465da5cd84d58b021661ff0838104">NAML(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[IJCAI 2019]Neural News Recommendation with Attentive Multi-View Learning</td></tr><tr id="ccc857bb-d110-47c0-b01f-06efdbc9ef87"><td class="cell-title"><a href="https://www.notion.so/DIFM-ccc857bbd11047c0b01f06efdbc9ef87">DIFM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[IJCAI 2020]A Dual Input-aware Factorization Machine for CTR Prediction</td></tr><tr id="76762c29-1f2a-4bc2-b7f4-f1bc8314969c"><td class="cell-title"><a href="https://www.notion.so/DeepFEFM-76762c291f2a4bc2b7f4f1bc8314969c">DeepFEFM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[arXiv 2020]Field-Embedded Factorization Machines for Click-through rate prediction</td></tr><tr id="03d1900e-1ae4-4085-8d52-75cc4556260e"><td class="cell-title"><a href="https://www.notion.so/BST-03d1900e1ae440858d5275cc4556260e">BST(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[DLP_KDD 2019]Behavior Sequence Transformer for E-commerce Recommendation in Alibaba</td></tr><tr id="e5e2cf34-28e1-416f-ac57-f4db856b56da"><td class="cell-title"><a href="https://www.notion.so/AutoInt-e5e2cf3428e1416fac57f4db856b56da">AutoInt</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[CIKM 2019]AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks</td></tr><tr id="afa13111-9b81-492c-b7a9-14fe0f71ad26"><td class="cell-title"><a href="https://www.notion.so/Wide-Deep-afa131119b81492cb7a914fe0f71ad26">Wide&amp;Deep(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[DLRS 2016]Wide &amp; Deep Learning for Recommender Systems</td></tr><tr id="2153e6c4-48a9-4976-9cf4-64324cf9ac55"><td class="cell-title"><a href="https://www.notion.so/Fibinet-2153e6c448a949769cf464324cf9ac55">Fibinet</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[RecSys19]FiBiNET: Combining Feature Importance and Bilinear feature Interaction for Click-Through Rate Prediction</td></tr><tr id="2e33035f-93c6-47be-8fbd-6ad53e0542c9"><td class="cell-title"><a href="https://www.notion.so/FLEN-2e33035f93c647be8fbd6ad53e0542c9">FLEN</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[2019]FLEN: Leveraging Field for Scalable CTR Prediction</td></tr><tr id="07eafbd5-b9c0-4c76-9cab-e4a25d56bbeb"><td class="cell-title"><a href="https://www.notion.so/DeepRec-07eafbd5b9c04c769cabe4a25d56bbeb">DeepRec</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[2017]Training Deep AutoEncoders for Collaborative Filtering</td></tr><tr id="21e9646f-b65e-456a-94dc-b8f04993efa2"><td class="cell-title"><a href="https://www.notion.so/AutoFIS-21e9646fb65e456a94dcb8f04993efa2">AutoFIS</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[KDD 2020]AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction</td></tr><tr id="cfd5e86c-52a0-481f-8be3-a7cf0bda09d0"><td class="cell-title"><a href="https://www.notion.so/DCN_V2-cfd5e86c52a0481f8be3a7cf0bda09d0">DCN_V2</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[WWW 2021]DCN V2: Improved Deep &amp; Cross Network and Practical Lessons for Web-scale Learning to Rank Systems</td></tr><tr id="7f0ebc37-3a2e-4938-afea-ae07cbc37228"><td class="cell-title"><a href="https://www.notion.so/DSIN-7f0ebc373a2e4938afeaae07cbc37228">DSIN</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[IJCAI 2019]Deep Session Interest Network for Click-Through Rate Prediction</td></tr><tr id="0bb46114-07bf-4253-bbbd-fff764fbe4b7"><td class="cell-title"><a href="https://www.notion.so/SIGN-0bb4611407bf4253bbbdfff764fbe4b7">SIGN(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[AAAI 2021]Detecting Beneficial Feature Interactions for Recommender Systems</td></tr><tr id="8909dd73-d998-4644-a16b-31a32f4f727f"><td class="cell-title"><a href="https://www.notion.so/IPRec-8909dd73d9984644a16b31a32f4f727f">IPRec(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[SIGIR 2021]Package Recommendation with Intra- and Inter-Package Attention Networks</td></tr><tr id="7994463d-8d1a-4c3b-9551-d812d2f5e63d"><td class="cell-title"><a href="https://www.notion.so/FGCNN-7994463d8d1a4c3b9551d812d2f5e63d">FGCNN</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[WWW 2019]Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction</td></tr><tr id="a198fd2d-016e-4b8b-9ffb-68a8b2b450c8"><td class="cell-title"><a href="https://www.notion.so/DPIN-a198fd2d016e4b8b9ffb68a8b2b450c8">DPIN(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i">[SIGIR 2021]Deep Position-wise Interaction Network for CTR Prediction</td></tr><tr id="1bbb0c7d-9e48-45be-86a8-685df559aa55"><td class="cell-title"><a href="https://www.notion.so/AITM-1bbb0c7d9e4845be86a8685df559aa55">AITM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[KDD 2021]Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising</td></tr><tr id="4b361e30-b522-4e86-8e5d-8510ab820863"><td class="cell-title"><a href="https://www.notion.so/PLE-4b361e30b5224e868e5d8510ab820863">PLE(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[RecSys 2020]Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations</td></tr><tr id="064e59b1-25c8-44f8-a826-8fc622f027ac"><td class="cell-title"><a href="https://www.notion.so/ESMM-064e59b125c844f8a8268fc622f027ac">ESMM(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[SIGIR 2018]Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate</td></tr><tr id="29c63810-a1c8-405e-96fb-b9324180d597"><td class="cell-title"><a href="https://www.notion.so/MMOE-29c63810a1c8405e96fbb9324180d597">MMOE(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[KDD 2018]Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts</td></tr><tr id="82e776c2-b984-4ffc-ba48-8dc535e05cf0"><td class="cell-title"><a href="https://www.notion.so/ShareBottom-82e776c2b9844ffcba488dc535e05cf0">ShareBottom(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[1998]Multitask learning</td></tr><tr id="9c7f6497-0187-4abb-b018-39834d103362"><td class="cell-title"><a href="https://www.notion.so/Maml-9c7f649701874abbb01839834d103362">Maml(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[PMLR 2017]Model-agnostic meta-learning for fast adaptation of deep networks</td></tr><tr id="16c49e73-2147-410c-968f-d28645db5a60"><td class="cell-title"><a href="https://www.notion.so/DSelect_K-16c49e732147410c968fd28645db5a60">DSelect_K(文档)</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[NeurIPS 2021]DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-Task Learning</td></tr><tr id="8a022938-53af-435d-836a-0ccc32906b11"><td class="cell-title"><a href="https://www.notion.so/ESCM2-8a02293853af435d836a0ccc32906b11">ESCM2</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[SIGIR 2022]ESCM2: Entire Space Counterfactual Multi-Task Model for Post-Click Conversion Rate Estimation</td></tr><tr id="43258c85-d088-4b3d-8666-a26d74343fe7"><td class="cell-title"><a href="https://www.notion.so/MetaHeac-43258c85d0884b3d8666a26d74343fe7">MetaHeac</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-purple">多任务</span></td><td class="cell-fp|i">[KDD 2021]Learning to Expand Audience via Meta Hybrid Experts and Critics for Recommendation and Advertising</td></tr><tr id="36c1eb93-d87d-4ca4-8f09-47f8c073b627"><td class="cell-title"><a href="https://www.notion.so/Listwise-36c1eb93d87d4ca48f0947f8c073b627">Listwise</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-pink">重排序</span></td><td class="cell-fp|i">[2019]Sequential Evaluation and Generation Framework for Combinatorial Recommender System</td></tr><tr id="7d49509c-2d82-47f7-9d5e-9d691fab0cad"><td class="cell-title"><a href="https://www.notion.so/7d49509c2d8247f79d5e9d691fab0cad">统计规则、行为规则、抽取式
+（一般从评论和内容中抽取）、生成式</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-default">展示层</span></td><td class="cell-fp|i"></td></tr><tr id="efd57b93-16b3-4209-9a4f-7cdaf272ad2a"><td class="cell-title"><a href="https://www.notion.so/RNN-globalrerank-efd57b9316b342099a4f7cdaf272ad2a">RNN系列（参考阿里的globalrerank系列）</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-pink">重排序</span></td><td class="cell-fp|i"></td></tr><tr id="57ce035b-f84c-4b5e-9605-7670af209db4"><td class="cell-title"><a href="https://www.notion.so/DPP-57ce035bf84c4b5e96057670af209db4">DPP</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-pink">重排序</span></td><td class="cell-fp|i"></td></tr><tr id="67343159-f183-4071-97f6-b54377da35b5"><td class="cell-title"><a href="https://www.notion.so/MMR-67343159f183407197f6b54377da35b5">MMR</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-pink">重排序</span></td><td class="cell-fp|i"></td></tr><tr id="3369167f-7ef8-4d7b-917c-9d9fde07f42f"><td class="cell-title"><a href="https://www.notion.so/NCF-3369167f7ef84d7b917c9d9fde07f42f">NCF各种交叉</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i"></td></tr><tr id="76bdc424-6edd-40e8-868a-7347f19d397f"><td class="cell-title"><a href="https://www.notion.so/Faiss-76bdc4246edd40e8868a7347f19d397f">Faiss（基于矢量量化）</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-brown">向量检索</span></td><td class="cell-fp|i"></td></tr><tr id="75d96de5-4373-4fb9-9f81-48d341f2ca0c"><td class="cell-title"><a href="https://www.notion.so/Annoy-LSH-75d96de543734fb99f8148d341f2ca0c">Annoy（基于LSH）</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-brown">向量检索</span></td><td class="cell-fp|i"></td></tr><tr id="de4d4a5f-2e51-483a-a715-db0d504cc0c1"><td class="cell-title"><a href="https://www.notion.so/NCF-de4d4a5f2e51483aa715db0d504cc0c1">NCF</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i"></td></tr><tr id="8e4eb1bb-87ac-4116-8815-ff3ad141a16e"><td class="cell-title"><a href="https://www.notion.so/8e4eb1bb87ac41168815ff3ad141a16e">随机搜索</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-gray">探索与利用</span></td><td class="cell-fp|i"></td></tr><tr id="7be8b871-ee27-4791-b1df-d1c3e9e84519"><td class="cell-title"><a href="https://www.notion.so/7be8b871ee274791b1dfd1c3e9e84519">在线贝叶斯优化</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-gray">探索与利用</span></td><td class="cell-fp|i"></td></tr><tr id="e5550d7e-84d5-4dfd-b350-c7bbeba4ddbc"><td class="cell-title"><a href="https://www.notion.so/CEM-e5550d7e84d54dfdb350c7bbeba4ddbc">CEM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-yellow">排序</span></td><td class="cell-fp|i"></td></tr><tr id="21163946-7d7d-4da5-a29a-250b88106e0a"><td class="cell-title"><a href="https://www.notion.so/DQN-211639467d7d4da5a29a250b88106e0a">DQN</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-gray">探索与利用</span></td><td class="cell-fp|i"></td></tr><tr id="062fb6e8-e41a-41cf-9379-34638cdd8334"><td class="cell-title"><a href="https://www.notion.so/Q-learning-062fb6e8e41a41cf937934638cdd8334">Q-learning</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-gray">探索与利用</span></td><td class="cell-fp|i"></td></tr><tr id="99260f7e-8630-4df3-9365-0d9c6861a050"><td class="cell-title"><a href="https://www.notion.so/bandit-99260f7e86304df393650d9c6861a050">bandit</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-gray">探索与利用</span></td><td class="cell-fp|i"></td></tr><tr id="1dc94368-729f-469c-a6aa-a0c44c1efd6e"><td class="cell-title"><a href="https://www.notion.so/Sentence-Bert-1dc94368729f469ca6aaa0c44c1efd6e">Sentence Bert</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i"></td></tr><tr id="523cafbb-b5cb-4a23-bfbf-0d0fc6a09d03"><td class="cell-title"><a href="https://www.notion.so/DSSM-523cafbbb5cb4a23bfbf0d0fc6a09d03">DSSM</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i"></td></tr><tr id="4a7f73a6-27d8-4fe2-adb1-166584e603d5"><td class="cell-title"><a href="https://www.notion.so/EGES-4a7f73a627d84fe2adb1166584e603d5">EGES</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i"></td></tr><tr id="47746a3a-910c-4e94-abb7-390d817c1730"><td class="cell-title"><a href="https://www.notion.so/Node2Vec-47746a3a910c4e94abb7390d817c1730">Node2Vec</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i"></td></tr><tr id="20c7a544-36b0-4500-a1c9-5ecadfd7df39"><td class="cell-title"><a href="https://www.notion.so/U2T2I-user-tag-20c7a54436b04500a1c95ecadfd7df39">U2T2I，基于user tag召回</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i"></td></tr><tr id="c525e761-0878-4791-8295-1192db35ca3e"><td class="cell-title"><a href="https://www.notion.so/c525e7610878479182951192db35ca3e">协同过滤</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i"></td></tr><tr id="85ccffe6-e967-4812-87e8-0fcaa165c534"><td class="cell-title"><a href="https://www.notion.so/LBS-85ccffe6e967481287e80fcaa165c534">统计类，热度，LBS</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-green">召回</span></td><td class="cell-fp|i"></td></tr><tr id="fee18258-8b21-4f1e-a03a-7982814114c6"><td class="cell-title"><a href="https://www.notion.so/fee182588b214f1ea03a7982814114c6">排序可以用汤普森采样
+（简单有效），融合到精排模型排等等</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-default">展示层</span></td><td class="cell-fp|i"></td></tr><tr id="3c02b52d-ed15-4b1e-ac0b-adbbc46c9093"><td class="cell-title"><a href="https://www.notion.so/CNN-3c02b52ded154b1eac0badbbc46c9093">首图优选：CNN抽特征，汤普森采样</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-default">展示层</span></td><td class="cell-fp|i"></td></tr><tr id="fc8548d1-70b5-46b6-b82f-fd0c4ce7a891"><td class="cell-title"><a href="https://www.notion.so/tab-fc8548d170b546b6b82ffd0c4ce7a891">交互式推荐、分tab、多种类型物料融合</a></td><td class="cell-B\PD"><span class="selected-value select-value-color-red">产品层</span></td><td class="cell-fp|i"></td></tr><tr id="15e26a1b-201c-4842-8ef0-bc297d302f9d"><td class="cell-title"><a href="https://www.notion.so/15e26a1b201c48428ef0bc297d302f9d">無題</a></td><td class="cell-B\PD"></td><td class="cell-fp|i"></td></tr><tr id="f036f4a9-358b-41b1-9dee-add540965acd"><td class="cell-title"><a href="https://www.notion.so/f036f4a9358b41b19deeadd540965acd">無題</a></td><td class="cell-B\PD"></td><td class="cell-fp|i"></td></tr><tr id="e86d3938-a95a-4059-bf63-88c8214fd2d0"><td class="cell-title"><a href="https://www.notion.so/e86d3938a95a4059bf6388c8214fd2d0">無題</a></td><td class="cell-B\PD"></td><td class="cell-fp|i"></td></tr></tbody></table></div><figure id="380befb4-d088-470d-8839-6f65a9bfede2" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%204.png"><img style="width:720px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%204.png"/></a></figure><figure id="3aedaeaa-1859-4919-9aff-fda72b9efeff" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%205.png"><img style="width:720px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%205.png"/></a></figure><figure id="187e6971-54e4-48bc-b172-17dee393c115" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%206.png"><img style="width:720px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%206.png"/></a></figure><figure id="3c6e026a-9173-4ee0-89ab-8900e3b675f8" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%207.png"><img style="width:720px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%207.png"/></a></figure><figure id="773a4dae-cc6a-4ca7-9dac-681f1a6c3956" class="image"><a href="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%208.png"><img style="width:720px" src="This%20is%20Roryou%20HOMEPAGE%20947f8ecb88ec4ce88f901d549653bfbc/Untitled%208.png"/></a></figure><h1 id="0bef7301-ea1f-42dc-a3f8-455420518122" class="">自然语言处理</h1><h1 id="03d1663b-1437-4411-a39a-5cb58e5e49c0" class="">计算机视觉</h1></div></article></body></html>
